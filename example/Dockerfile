@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as base
+FROM ubuntu:20.04 as base
 
 RUN  echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections && \
      apt-get update && \
